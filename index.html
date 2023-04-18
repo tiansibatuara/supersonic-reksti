@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultrasonic Restaurant</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <!-- <li><p>Ultrasonic</p></li> -->
+            <li><img src="./assets/logo.png" width="200px" height="auto"></li>
+            <li><a class="about" href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <!-- As a link -->
+    <div class="container">
+        <h1 id="status" class="navbar-brand">Loading ...</h1>
+        <div class="table-container">
+            <h1 id="table-title">Choose your table</h1>
+            <div class="table-grid">
+                <button id="table">1</button>
+                <button id="tables">2</button>
+                <button id="tables">3</button>
+                <button id="tables">4</button>
+                <button id="tables">5</button>
+                <button id="tables">6</button>
+                <button id="tables">7</button>
+                <button id="tables">8</button>
+                <button id="tables">9</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 style="font-family: 'Bebas Neue', cursive;
+        display: flex;
+        justify-content: center; font-size: 32px;">Book Your Table</h2>
+        <div class="grid">
+            <div class="sched" id="sched-0">08:00 - 10:00</div>
+            <div class="sched" id="sched-1">10:00 - 12:00</div>
+            <div class="sched" id="sched-2">12:00 - 14:00</div>
+            <div class="sched" id="sched-3">14:00 - 16:00</div>
+            <div class="sched" id="sched-4">16:00 - 18:00</div>
+            <div class="sched" id="sched-5">18:00 - 20:00</div>
+            <div class="sched" id="sched-6">20:00 - 22:00</div>
+            <div class="sched" id="sched-7">22:00 - 24:00</div>
+        </div>
+
+        <!-- <h2>Input your email</h2> -->
+
+        <form id="book-form">
+            <div class="form-input">
+                <label for="name">Booking Name</label>
+                <input id="name" name="name" class="email-form" type="text" value="" placeholder="Input your name..." required />
+            </div>
+            <div class="form-input">
+                <label for="email">Your Email</label>
+                <input id="email" name="email" class="email-form" type="email" value="" placeholder="Input your email..." required />
+            </div>
+            <div class="button-container">
+            <button id="book-button">
+                Book
+            </button>
+        </div>
+        </form>
+    </div>
+  
+</div>
+
+<footer>
+    <p>Let's Connect!</p>
+    <div class="footer-container">
+          </div>
+  </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
